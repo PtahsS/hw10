@@ -6,8 +6,7 @@ function counter (startNum = 0, step = 1) {
 			return count += step;
 		},
 		reset: function() {
-			count = 0;
-			step = 1;
+			count = startNum;
 		}
 	} 
 		
@@ -27,3 +26,18 @@ console.log(first.count());
 console.log(first.count());
 console.log(first.count());
 console.log(first.count());
+
+
+let second = counter(3, 2);
+
+console.log(second.count());
+console.log(second.count());
+console.log(second.count());
+console.log(second.count());
+
+second.reset();
+
+console.log(second.count());
+console.log(second.count());
+console.log(second.count());
+console.log(second.count());
